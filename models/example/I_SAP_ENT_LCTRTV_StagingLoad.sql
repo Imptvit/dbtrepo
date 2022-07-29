@@ -1,13 +1,13 @@
-CREATE OR REPLACE TRANSIENT TABLE LOCATION_TRAIT_VALUE_WRK_1
-        	             as
-        	             SELECT
-						   LOC_TRAIT_VAL_CD as LOC_TRAIT_VAL_CD_lkp,
-						   LOC_TRAIT_CD as LOC_TRAIT_CD_lkp,
-						   LOC_TRAIT_VAL_DESC  as LOC_TRAIT_VAL_DESC_lkp 
-						  FROM
-						   EDWDATA.LOCATION_TRAIT_VALUE     
-						  WHERE
-						   LOC_TRAIT_CD = 'DEMO';
+-- CREATE OR REPLACE TRANSIENT TABLE LOCATION_TRAIT_VALUE_WRK_1
+        	            --  as
+        	            --  SELECT
+						--    LOC_TRAIT_VAL_CD as LOC_TRAIT_VAL_CD_lkp,
+						--    LOC_TRAIT_CD as LOC_TRAIT_CD_lkp,
+						--    LOC_TRAIT_VAL_DESC  as LOC_TRAIT_VAL_DESC_lkp 
+						--   FROM
+						--    EDWDATA.LOCATION_TRAIT_VALUE     
+						--   WHERE
+						--    LOC_TRAIT_CD = 'DEMO';
 						   
 						   
 CREATE OR REPLACE TRANSIENT TABLE LOCATION_TRAIT_VALUE_WRK_3
@@ -143,7 +143,7 @@ CREATE OR REPLACE TRANSIENT TABLE LOCATION_TRAIT_VALUE_WRK_8
 						   SELECT
 							*    
 						   FROM
-							LOCATION_TRAIT_VALUE_WRK_1  QUALIFY ROW_NUMBER() OVER( 
+							{{ ref('LOCATION_TRAIT_VALUE_WRK_1') }}  QUALIFY ROW_NUMBER() OVER( 
 							PARTITION BY LOC_TRAIT_CD_lkp, LOC_TRAIT_VAL_CD_lkp           
 						    ORDER BY LOC_TRAIT_CD_lkp, LOC_TRAIT_VAL_CD_lkp) = 1
 						   )  auto_alias_1 
