@@ -1,0 +1,20 @@
+SELECT
+ LOC_TRAIT_VAL_CD,
+ LOC_TRAIT_CD,
+ LOC_TRAIT_VAL_DESC   
+FROM
+ (SELECT
+ LOC_TRAIT_VAL_CD,
+ LOC_TRAIT_CD,
+ LOC_TRAIT_VAL_DESC,
+ row_number() over(  partition 
+ by
+ LOC_TRAIT_CD,
+ LOC_TRAIT_VAL_CD   
+ ORDER BY
+ LOC_TRAIT_CD asc ,
+ LOC_TRAIT_VAL_CD asc ) rnk   
+ FROM
+ {{ ref('LOCATION_TRAIT_VALUE_WRK_10') }})   AS X   
+WHERE
+ X.rnk = 1;

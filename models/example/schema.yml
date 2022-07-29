@@ -2,20 +2,147 @@
 version: 2
 
 models:
-    - name: my_first_dbt_model
+    - name: LOCATION_TRAIT_VALUE_WRK_1
       description: "A starter dbt model"
       columns:
-          - name: id
-            description: "The primary key for this table"
-            tests:
-                - unique
-                - not_null
+          - name:   LOC_TRAIT_VAL_CD_lkp
+                    LOC_TRAIT_CD_lkp
+                    LOC_TRAIT_VAL_DESC_lkp
 
-    - name: my_second_dbt_model
+    - name: LOCATION_TRAIT_VALUE_WRK_3
       description: "A starter dbt model"
       columns:
-          - name: id
-            description: "The primary key for this table"
-            tests:
-                - unique
-                - not_null
+          - name:   REC_TYPE
+                    KUNNR
+                    LAND1
+                    NAME1
+                    NAME2
+                    ORT01
+                    PSTLZ
+                    REGIO
+                    SORTL
+                    STRAS
+                    TELF1
+                    TELFX
+                    XCPDK
+                    ADRNR
+                    BBBNR
+                    BBSNR
+                    BUBKZ
+                    KTOKD
+                    STCD1
+                    ZZBRAND  
+                    ZZCHANNEL
+                    ZZCLUSTER
+                    ZZDISTHQ 
+                    ZZDIVISION  
+                    ZZDLVSRTCODE
+                    ZZFUNCT 
+                    ZZGARHANGCAP
+                    ZZHAZATCAP  
+                    ZZHLDALOCINV
+                    ZZHOLDLOADFLG 
+                    ZZLEGCOCODE 
+                    ZZMALLCODE  
+                    ZZMALLFASH  
+                    ZZMALLTYPE  
+                    ZZMEGABRAND 
+                    ZZMSADIST
+                    ZZONE 
+                    ZZPCPKPROCFAC
+                    ZZPHYSICALLOC
+                    ZZPRICEPOINT 
+                    ZZREGION
+                    ZZREMODELDATE 
+                    ZZSERIES
+                    ZZSHIPSTORESTAT 
+                    ZZSITECATEGORY
+                    ZZSTRCLASS
+                    ZZSTRDESIGN 
+                    ZZSTREVNT
+                    ZZSTRNR1 
+                    ZZSTRNR2 
+                    ZZSTRSRV 
+                    ZZSTRTYP 
+                    ZZVELOCITY 
+                    ZZSTRWNDWST
+                    ZZSUBWNDW 
+                    ZZTRDAREAETH
+                    ZZTRDAREAPOP
+                    ZZVENDORNBR 
+                    LIFNR 
+                    LZONE 
+                    ZZMERCHDATE
+                    ZZTIER
+                    ZZCOUNTREG 
+                    ZZSUBFORMAT
+                    ZZMERGEDTO 
+                    ERDAT
+                    BRSCH
+                    SPRAS
+                    KONZS
+                    STCD2
+                    STCD3
+                    STCD4
+
+    - name: LOCATION_TRAIT_VALUE_WRK_4
+      description: "A starter dbt model"
+      columns:
+          - name:   LOC_TRAIT_VAL_CD
+                    LOC_TRAIT_CD
+
+    - name: LOCATION_TRAIT_VALUE_WRK_5
+      description: "A starter dbt model"
+      columns:
+          - name:   LOC_TRAIT_VAL_CD
+                    LOC_TRAIT_CD
+                    LOC_TRAIT_VAL_DESC
+
+    - name: LOCATION_TRAIT_VALUE_WRK_6
+      description: "A starter dbt model"
+      columns:
+          - name:   LOC_TRAIT_VAL_CD
+                    LOC_TRAIT_CD
+                    LOC_TRAIT_VAL_DESC
+
+    - name: LOCATION_TRAIT_VALUE_WRK_7
+      description: "A starter dbt model"
+      columns:
+          - name:   LOC_TRAIT_VAL_CD
+                    LOC_TRAIT_CD
+                    LOC_TRAIT_VAL_DESC
+                    
+    - name: LOCATION_TRAIT_VALUE_WRK_8
+      description: "A starter dbt model"
+      columns:
+          - name:   LOC_TRAIT_VAL_CD
+                    LOC_TRAIT_CD
+                    LOC_TRAIT_VAL_DESC
+
+    - name: LOCATION_TRAIT_VALUE_WRK_9
+      description: "A starter dbt model"
+      columns:
+          - name:   LOC_TRAIT_VAL_CD
+                    LOC_TRAIT_CD
+                    LOC_TRAIT_VAL_DESC
+                    
+    - name: LOCATION_TRAIT_VALUE_WRK_10
+      description: "A starter dbt model"
+      columns:
+          - name:   LOC_TRAIT_VAL_CD
+                    LOC_TRAIT_CD
+                    LOC_TRAIT_VAL_DESC
+                    
+    - name: LOCATION_TRAIT_VALUE_WRK_11
+      description: "A starter dbt model"
+      columns:
+          - name:   LOC_TRAIT_VAL_CD
+                    LOC_TRAIT_CD
+                    LOC_TRAIT_VAL_DESC
+                    
+    - name: LOCATION_TRAIT_VALUE_TMP
+      description: "A starter dbt model"
+      columns:
+          - name:   LOC_TRAIT_VAL_CD
+                    LOC_TRAIT_CD
+                    LOC_TRAIT_VAL_DESC
