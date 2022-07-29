@@ -1,13 +1,13 @@
--- CREATE OR REPLACE TRANSIENT TABLE LOCATION_TRAIT_VALUE_WRK_1
-        	            --  as
-        	            --  SELECT
-						--    LOC_TRAIT_VAL_CD as LOC_TRAIT_VAL_CD_lkp,
-						--    LOC_TRAIT_CD as LOC_TRAIT_CD_lkp,
-						--    LOC_TRAIT_VAL_DESC  as LOC_TRAIT_VAL_DESC_lkp 
-						--   FROM
-						--    EDWDATA.LOCATION_TRAIT_VALUE     
-						--   WHERE
-						--    LOC_TRAIT_CD = 'DEMO';
+CREATE OR REPLACE TRANSIENT TABLE LOCATION_TRAIT_VALUE_WRK_1
+        	             as
+        	             SELECT
+						   LOC_TRAIT_VAL_CD as LOC_TRAIT_VAL_CD_lkp,
+						   LOC_TRAIT_CD as LOC_TRAIT_CD_lkp,
+						   LOC_TRAIT_VAL_DESC  as LOC_TRAIT_VAL_DESC_lkp 
+						  FROM
+						   EDWDATA.LOCATION_TRAIT_VALUE     
+						  WHERE
+						   LOC_TRAIT_CD = 'DEMO';
 						   
 						   
 CREATE OR REPLACE TRANSIENT TABLE LOCATION_TRAIT_VALUE_WRK_3
@@ -226,3 +226,5 @@ INSERT INTO EDWTEMP.LOCATION_TRAIT_VALUE_TMP
 					 LOC_TRAIT_CD,
 					 LOC_TRAIT_VAL_DESC
 					 FROM LOCATION_TRAIT_VALUE_WRK_11;					
+					 
+select * from 	EDWTEMP.LOCATION_TRAIT_VALUE_TMP;				 
