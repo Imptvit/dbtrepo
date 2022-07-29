@@ -17,4 +17,4 @@ FROM
  FROM
  {{ ref('LOCATION_TRAIT_VALUE_WRK_10') }})   AS X   
 WHERE
- X.rnk = 1;
+ X.rnk = 1

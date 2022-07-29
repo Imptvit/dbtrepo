@@ -4,4 +4,4 @@ SELECT
  coalesce(LOC_TRAIT_VAL_DESC_lkp,
  '') as LOC_TRAIT_VAL_DESC   
 FROM
- {{ ref('LOCATION_TRAIT_VALUE_WRK_8') }};
+ {{ ref('LOCATION_TRAIT_VALUE_WRK_8') }}

@@ -14,4 +14,4 @@ PARTITION BY LOC_TRAIT_CD_lkp, LOC_TRAIT_VAL_CD_lkp
   ORDER BY LOC_TRAIT_CD_lkp, LOC_TRAIT_VAL_CD_lkp) = 1
  )  auto_alias_1 
  ON auto_alias_0.LOC_TRAIT_CD = auto_alias_1.LOC_TRAIT_CD_lkp 
- AND auto_alias_0.LOC_TRAIT_VAL_CD = auto_alias_1.LOC_TRAIT_VAL_CD_lkp;
+ AND auto_alias_0.LOC_TRAIT_VAL_CD = auto_alias_1.LOC_TRAIT_VAL_CD_lkp
