@@ -146,3 +146,17 @@ models:
           - name:   LOC_TRAIT_VAL_CD
                     LOC_TRAIT_CD
                     LOC_TRAIT_VAL_DESC
+
+    - name: NXG999FILELD
+      description: "A starter dbt model"
+      columns:
+          - name:   LOC_TRAIT_VAL_CD
+                    LOC_TRAIT_CD
+                    LOC_TRAIT_VAL_DESC
+                    
+    - name: NXG999STAGELD
+      description: "A starter dbt model"
+      columns:
+          - name:   LOC_TRAIT_VAL_CD
+                    LOC_TRAIT_CD
+                    LOC_TRAIT_VAL_DESC                     
