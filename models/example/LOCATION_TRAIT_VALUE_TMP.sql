@@ -1,8 +1,7 @@
 {{
   config(
-    materialized='incremental',
-    unique_key='LOC_TRAIT_VAL_CD',
-    incremental_strategy='delete+insert'
+    materialized='table',
+    alias='LOCATION_TRAIT-VALUE_TMP'
   )
 }}
 
